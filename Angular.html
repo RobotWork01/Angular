@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>UiPath_01</title>
+<style>
+.sample_box6 {
+    padding: 1em 1.5em;
+    margin: 2em 0;
+    background-color:lightblue; /*背景色*/#f6faee;
+    border-left: solid 10px darkblue; /*左ライン*/#6b8e23;
+    color:#000000;/*文字色*/
+}
+.sample_box6 p {
+    margin: 0; 
+    padding: 0;
+}
+</style>
+</head>
+<body bgcolor="ivory">
+<p>
+<div class="sample_box6" style="width:80%;height:30px;">
+<span style="font-size:23px;">Angularとは？</span>
+&nbsp;&nbsp;<a href="https://robotwork01.github.io/RobotWork01/RobotWork01.html">戻る</a>
+&nbsp;&nbsp;<a href="">ReadMe</a>
+</div>
+<pre>※「3大フレームワーク」と言われる「Angular」「React」「VueJS」
+参考記事：
+<span style="margin-left: 1em; text-indent: -3em;">&nbsp;&nbsp;<a href="https://it-kyujin.jp/article/detail/1647/#:~:text=%E4%BB%8A%E5%9B%9E%E3%81%AF%E3%80%81%E3%81%84%E3%82%8F%E3%82%86%E3%82%8B%E3%80%8C3%E5%A4%A7,%E3%81%A6%E3%81%84%E3%81%8D%E3%81%9F%E3%81%84%E3%81%A8%E6%80%9D%E3%81%84%E3%81%BE%E3%81%99%E3%80%82">
+三大Javascriptフレームワーク「Angular、React、Vuejs」について</a>
+   IT求人ナビ  株式会社アクロビジョン
+</span></pre>
+<div style="background-color:darkblue;width:20em;height:40px;display: table-cell;vertical-align: middle;"><font size="5" color="white" face="メイリオ">
+<pre><b>   1．Angularの特徴</b></pre>
+</div></font>
+<pre>
+Angular（アンギュラ―）とは、Google社（グーグル・シャ）が2016年頃に開発したTypescriptベース（タイプ・スクリプト・ベース）のフロントエンドフレームワークです。
+
+１）フルスタックフレームワーク
+Angularは「フルスタックフレームワーク」を自称。
+Angularだけ用意すればWebフロントエンド開発ができるような設計になってる。
+
+ Webフロントエンド開発については、Angularを用意するだけで事足りる設計を目指して開発されている。
+ Webフロントエンド開発に必要な機能は一通り揃えている。
+  ①UIの構築
+  ②ルーティングや状態管理
+  ③バックエンドとの通信
+
+２）コンポーネント思考
+Angularでは、コンポーネントベースの設計をされている。
+
+ １つのコンポーネント内に4つのファイルで構成される。
+  ①UIを構築する「.html」ファイル 「.css」ファイル、
+  ②状態変化やリクエストなどのロジックを記述する「.ts」ファイル、
+  ③テスト用のコードを記述する「.spec.ts」
+
+  ※これらのファイルにコードを記述し、開発をしていく流れになる。
+
+３）Typescriptを標準採用
+    Angularでは、Typescriptを標準で採用。
+
+※そのため、型付けや型推論、Null安全などのTypescriptの恩恵を十分に受けることが可能。
+</pre>
+<div style="background-color:darkblue;width:20em;height:40px;display: table-cell;vertical-align: middle;"><font size="5" color="white" face="メイリオ">
+<pre><b>   2．Angularのメリット</b></pre>
+</div></font>
+<pre>
+１）Angularだけでフロントエンドの機能が開発できる。
+    AngularはUIの構築だけではなく、ルーティングや状態管理など
+    フロントエンド開発に必要な機能が一通り揃っている。
+    
+    ※なので、特に新しく何かライブラリ等を追加しなくてもフロントエンド開発を始められる手軽さが強み。
+
+２）コンポーネントの作成が早い
+    Angularはコンポーネントの作成では、「angular-cli」というコマンドラインツールでも作成することができる。
+    このCLIを使用するとコンポーネントの作成が早くできる。
+    コンポーネントを作成するには「ng g component(コンポーネント名)(作成する場所)」とコマンド入力すると、指定した
+    コンポーネント名、場所に.html、.css、.ts、.spec.tsファイルがすぐに作成される。
+</pre>
+<div style="background-color:darkblue;width:20em;height:40px;display: table-cell;vertical-align: middle;"><font size="5" color="white" face="メイリオ">
+<pre><b>   3．Angularのデメリット</b></pre>
+</div></font><pre>
+１）Typescriptの学習が必須である
+    React、VueJSはTypescriptを任意で開発に使うことができるけれど、
+    Angularではロジックの記述ではTypescriptを使用して記述することが必須。
+    
+    ※Angularでの開発では、Typescriptの知識が必須となる。
+    
+    ※Angularの開発には型付けなどのTypescriptの仕様を把握しなければならない
+    ※なので、Typescriptを学習したことのない人には少々ハードルが高い。
+
+２）開発の規模によってはオーバースペックである
+    Angularはフロントエンド開発に必要な様々な機能が搭載されているが、
+    開発規模によっては必要のない機能などもある。
+    
+    例えば、小規模な個人サイトなどで状態管理の機能はあまり必要のない機能。
+    このように、開発規模によっては必要のない機能までついてくるので、その点は注意が必要。
+</pre>
+<div class="sample_box6" style="width:80%;height:30px;">
+<span style="font-size:23px;">Angularのサードパーティー製ライブラリ</span>
+</div><pre>
+１）Angular Material
+    Angularの公式マテリアルデザインライブラリ。
+    公式サイト:: <a href="https://material.angular.io">https://material.angular.io</a>
+    GitHub:: <a href="https://github.com/angular/components">https://github.com/angular/components</a>
+
+    ①Angular Materialのスキーマの取込みコマンド  または、CDNベース
+      *================================================*
+      * Angular Materialのスキーマの取込みコマンド
+      *================================================*
+      ＜取込みコマンド＞
+      ng add @angular/material 
+      
+      ＜取込みコマンド実行中＞
+      ・テーマを4つのプリセットから選択する。⇒ Indigo Pink
+      ・タイポグラフィー設定をするか否か。⇒ yes
+      ・Browser Animationの設定するか否か。⇒ yes
+      ＜取込みコマンド実行中＞
+        コマンドが終了すると関連するファイルがアップデートされる。
+
+</pre>
+<div style="background-color:khaki;width:60em;height:25px;display: table-cell;vertical-align: middle;><font size="5" color="white" face="メイリオ">
+<pre><b>   Angular MaterialのスキーマのCDNベースでの取込み  start</b></pre>
+</div></font>
+<pre>
+参考記事：
+ <a href="https://www.tutorialspoint.com/angular_material/angular_material_content.htm">https://www.tutorialspoint.com/angular_material/angular_material_content.htm</a>
+ Angular Material - Content
+ 
+ <a href="https://www.finddevguides.com/Angular-material-quick-guide">https://www.finddevguides.com/Angular-material-quick-guide</a>
+   Tutorials
+     カテゴリ:Web Development Tutorials
+       Angular Material Tutorial  (41頁)
+
+<textarea cols="120" rows="30">
+<html lang = "en" >
+   <head>
+      <link rel = "stylesheet"
+         href = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+      <script type = "text/javascript">
+         angular.module('firstApplication', ['ngMaterial']);
+      </script>
+   </head>
+
+   <body ng-app = "firstApplication" ng-cloak>
+      <md-toolbar class = "md-warn">
+         <div class = "md-toolbar-tools">
+            <h2 class = "md-flex">HTML 5</h2>
+         </div>
+      </md-toolbar>
+      <md-content flex layout-padding>
+         <p>HTML5 is the next major revision of the HTML standard superseding HTML 4.01,
+         XHTML 1.0, and XHTML 1.1. HTML5 is a standard for structuring and presenting
+         content on the World Wide Web.</p>
+
+         <p>HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web
+         ypertext Application Technology Working Group (WHATWG).</p>
+
+         <p>The new standard incorporates features like video playback and drag-and-drop
+         that have been previously dependent on third-party browser plug-ins such as Adobe
+         Flash, Microsoft Silverlight, and Google Gears.</p>
+      </md-content>
+   </body>
+</html>
+</textarea>
+</pre>
+<div style="background-color:khaki;width:60em;height:25px;display: table-cell;vertical-align: middle;><font size="5" color="white" face="メイリオ">
+<pre><b>   Angular MaterialのスキーマのCDNベースでの取込み  end</b></pre>
+</div></font>
+<pre>
+※CDN（シー・ディー・エヌ）・・・Content Delivery Network（コンテンツ・デリバリー・ネットワーク）の略、「コンテンツ配信ネットワーク」の意味。
+
+</pre>
+<div style="background-color:mediumaquamarine;width:25em;height:40px;display: table-cell;vertical-align: middle;"><font size="5" color="white" face="メイリオ">
+<pre><b>   ＜Angular Materialの使い方＞</b></pre>
+</div></font>
+<pre>
+      参考記事：
+      <a href="https://tech.windii.jp/frontend/angular/angularmaterial">https://tech.windii.jp/frontend/angular/angularmaterial</a>
+     【超簡単】AngularMaterialを導入する方法【チュートリアル】
+
+      <a href="https://www.apps-gcp.com/angular-material-biginner/">https://www.apps-gcp.com/angular-material-biginner/</a>
+      Angular Material 初心者のための徹底解説
+
+      <a href="https://www.finddevguides.com/Angular-material-quick-guide">https://www.finddevguides.com/Angular-material-quick-guide</a>
+      Angular-material-quick-guide
+      
+
+</pre>
+<div style="background-color:mediumaquamarine;width:25em;height:40px;display: table-cell;vertical-align: middle;"><font size="5" color="white" face="メイリオ">
+<pre><b>   ＜Angularについて注意すべきこと＞</b></pre>
+</div></font>
+<pre>
+ 情報収集等をする際には次の点だけ気をつけて下さい。
+  ①Angularの初期バージョンは、「AngularJS」というJavascriptベースのフレームワーク。
+  ②そのため「Angular」と「AngularJS」は違うものである。
+
+
+</pre>
+</body>
+</html>
